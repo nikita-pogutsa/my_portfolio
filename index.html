@@ -48,15 +48,22 @@
 	<div class="container">
     	<div class="row">
         	<div class="span2">
-            	<div id="logo">
-        			<a href="index.html" title="NAME">NAME</a>
-        		</div>
+            	<div id="logo" style="display: flex; align-items: center; gap: 16px;">
+    <img src="assets/img/about.jpg" alt="Profile" style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
+    <span style="font-size: 1.7em; font-weight: bold; color: inherit;">Nikita Pogutsa</span>
+    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" style="display: flex; align-items: center;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:22px; height:22px;">
+    </a>
+    <a href="mailto:email@email.com" title="Email" style="display: flex; align-items: center; font-size: 1.1em; color: inherit; text-decoration: none; margin-left: 4px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="Email" style="width:22px; height:22px; margin-right: 4px;">
+        email@email.com
+    </a>
+</div>
             </div>
             <div class="span10">
         		<nav id="menu">
                     <ul id="menu-nav">
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <!-- Links removed as requested -->
                     </ul>
                 </nav>
         	</div>
@@ -66,35 +73,126 @@
 <!-- End Header -->
 
 <!-- Start Intro Box -->
-<section id="intro-box" class="margin-0">
-	<div class="container">
-        <div class="row">
-            <div class="span12">
-                <h3 class="center">Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.</h3>
+<section id="intro-box" class="margin-0" style="margin-bottom: 0;">
+    <div class="container" style="padding-bottom: 0;">
+        <div class="row" style="margin-bottom: 0;">
+            <div class="span12" style="margin-bottom: 0;">
+                <ul class="center" style="list-style: disc inside; text-align: left; display: inline-block; margin-bottom: 0;">
+                    <li>7+ years of experience</li>
+                    <li>Unity Engine, C#</li>
+                    <li>Unreal Engine, C++</li>
+                    <li>AA PC/Console titles and mobile titles</li>
+                    <li>Gameplay, UI, Tools</li>
+                    <li>Single player and multiplayer</li>
+                    <li>Team leading experience</li>
+                    <li>Agile, Scrum, Kanban</li>
+                </ul>
             </div> 
         </div>
     </div>
 </section>
+<hr style="margin-top: 8px; margin-bottom: 8px;">
 <!-- End Intro Box -->
 
 <!-- Start Section Portfolio Projects -->
 <section id="portfolio" class="container">
-    <div class="row">
-        <div id="portfolio-projects">
-            <ul id="projects">
-                <li class="item-project span12">
-                    <a href="work.html" title="Work1"><img src="assets/img/home1.jpg" alt=""></a>
-                </li>       
-                <li class="item-project span6">
-                    <a href="work.html" title="Work2"><img src="assets/img/home2.jpg" alt=""></a>
-                </li>
-                <li class="item-project span6">
-                    <a href="work.html" title="Work3"><img src="assets/img/home4.jpg" alt=""></a>
-                </li>
-                <li class="item-project span12">
-                    <a href="work.html" title="Work4"><img src="assets/img/home3.jpg" alt=""></a>
-                </li>
-            </ul>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Unanounced "><img src="assets/img/unanounced.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Responsive Web Design</h3>
+            <p>A modern, mobile-friendly website layout using HTML5, CSS3, and Bootstrap. Focused on accessibility and cross-device compatibility.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="E-Commerce Platform"><img src="assets/img/internal.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>E-Commerce Platform</h3>
+            <p>Developed a scalable online store with product listings, shopping cart, and secure checkout using React and Node.js.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Personal Blog Engine"><img src="assets/img/samedi.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Personal Blog Engine</h3>
+            <p>Created a custom blog platform with markdown support, user authentication, and a clean, minimalist UI.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Portfolio Showcase"><img src="assets/img/dragon.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Portfolio Showcase</h3>
+            <p>Designed and built a personal portfolio site to highlight projects, skills, and experience with interactive elements.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Real-Time Chat App"><img src="assets/img/laf.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Real-Time Chat App</h3>
+            <p>Implemented a chat application with WebSocket for instant messaging and user presence indicators.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Task Management Tool"><img src="assets/img/rabbits.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Task Management Tool</h3>
+            <p>Built a productivity app for creating, tracking, and organizing tasks with drag-and-drop functionality.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Weather Dashboard"><img src="assets/img/farm.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Weather Dashboard</h3>
+            <p>Developed a dashboard that displays real-time weather data using third-party APIs and dynamic charts.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Photo Gallery Website"><img src="assets/img/CA.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Photo Gallery Website</h3>
+            <p>Created an interactive gallery with image uploads, filtering, and lightbox viewing experience.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="API Integration Project"><img src="assets/img/pixel.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>API Integration Project</h3>
+            <p>Integrated multiple external APIs to aggregate and display data in a unified, user-friendly interface.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+        <div class="span6">
+            <a href="work.html" title="Data Visualization Dashboard"><img src="assets/img/mi8.jpg" alt="" style="width:100%;"></a>
+        </div>
+        <div class="span6">
+            <h3>Data Visualization Dashboard</h3>
+            <p>Engineered a dashboard with interactive charts and graphs to visualize complex datasets for business insights.</p>
         </div>
     </div>
 </section>
@@ -102,16 +200,14 @@
 
 <!-- Start Footer -->
 <footer class="footer-widgets">
-	<div class="container">
-    	<div class="row">
-         	<div class="span4 widget">
-            	<div class="about-widget">
-                    <h7>email@email.com</h7>
+    <div class="container">
+        <div class="row">
+             <div class="span4 widget">
+                <div class="about-widget">
                 </div>
             </div>
              <div class="span8 widget">
-            	<div class="twitter-widget">
-                		<h7><a href="#" target="_blank">facebook</a> &nbsp; • &nbsp; <a href="#" target="_blank">instagram</a> &nbsp; • &nbsp; <a href="#" target="_blank">linkedin</a> &nbsp; • &nbsp; <a href="#" target="_blank">github</a>     
+                <div class="twitter-widget">
                 </div>	
             </div>
         </div>
