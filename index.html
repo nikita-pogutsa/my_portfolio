@@ -51,12 +51,17 @@
             	<div id="logo" style="display: flex; align-items: center; gap: 16px;">
     <img src="assets/img/about.jpg" alt="Profile" style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
     <span style="font-size: 1.7em; font-weight: bold; color: inherit;">Nikita Pogutsa</span>
-    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" style="display: flex; align-items: center;">
+</div>
+<div class="contact-links-responsive">
+    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="contact-link">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:22px; height:22px;">
     </a>
-    <a href="mailto:email@email.com" title="Email" style="display: flex; align-items: center; font-size: 1.1em; color: inherit; text-decoration: none; margin-left: 4px;">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="Email" style="width:22px; height:22px; margin-right: 4px;">
-        email@email.com
+    <a href="mailto:npgtsa@pm.me" title="Email" class="contact-link">
+        npgtsa@pm.me
+    </a>
+    <a href="assets/resume.pdf" download class="contact-link download-resume-link" title="Download CV" style="border: none; background: none; display: flex; align-items: center; gap: 4px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#fff"/><path d="M7 7h10M7 11h10M7 15h6" stroke="#e53e3e"/><rect x="7" y="15" width="6" height="2" fill="#e53e3e"/><text x="12" y="19" text-anchor="middle" font-size="7" fill="#e53e3e" font-family="Arial, Helvetica, sans-serif">PDF</text></svg>
+        <span style="font-size: 1em; color: inherit;">CV</span>
     </a>
 </div>
             </div>
@@ -70,10 +75,120 @@
         </div>
     </div>
 </header>
+<div style="width: 100%; height: 0; line-height: 0;"><hr style="margin: 28px 0; width: 100%; box-sizing: border-box; border-width: 1px 0 0 0;"></div>
+<style>
+  header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.row {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+#logo {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.contact-links-responsive {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+#intro-box {
+  margin-top: 28px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+  .contact-links-responsive {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+    flex-direction: row !important;
+    justify-content: flex-start;
+  }
+  @media (max-width: 900px) {
+    .contact-links-responsive {
+      justify-content: center !important;
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    #logo {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-links-responsive {
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      gap: 6px;
+      margin-top: 10px;
+      justify-content: center !important;
+      width: 100%;
+    }
+    .contact-link {
+      font-size: 0.98em;
+      padding: 2px 6px;
+    }
+    .download-resume-link {
+      width: auto;
+      text-align: left;
+    }
+  }
+  @media (min-width: 901px) {
+    #logo {
+      align-items: flex-start;
+      text-align: left;
+    }
+    .contact-links-responsive {
+      justify-content: flex-start !important;
+    }
+    #intro-box .container, #intro-box .span12 {
+      text-align: left !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+    }
+    #intro-box ul.center {
+      text-align: left !important;
+      margin-left: 0 !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+  }
+  /* Remove excessive gaps and padding between sections */
+  #intro-box {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #intro-box .container {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #intro-box .span12 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #intro-box ul.center {
+    margin-bottom: 0 !important;
+  }
+  hr {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+  section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+</style>
 <!-- End Header -->
 
 <!-- Start Intro Box -->
-<section id="intro-box" class="margin-0" style="margin-bottom: 0;">
+<section id="intro-box" class="margin-0" style="margin: 0; padding: 0;">
     <div class="container" style="padding-bottom: 0;">
         <div class="row" style="margin-bottom: 0;">
             <div class="span12" style="margin-bottom: 0;">
