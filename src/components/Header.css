@@ -1,0 +1,14 @@
+﻿// ...existing code...
+.download-resume-btn {
+  padding: 0.5em 1em;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.download-resume-btn:hover {
+  background: #0056b3;
+}
+// ...existing code...
+
