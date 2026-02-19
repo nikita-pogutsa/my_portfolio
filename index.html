@@ -99,123 +99,188 @@
     </div>
 </header>
 <style>
-  header {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-.container {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-.row {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-#logo {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-.contact-links-responsive {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-#intro-box {
-  margin-top: 40px !important;
-  margin-bottom: 120px !important;
-  padding-bottom: 0 !important;
-}
+  /* Small visual polish: keep it clean and low-noise. */
+  body {
+    background: #fcfcfd;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  header,
+  .container,
+  .row,
+  #logo,
+  .contact-links-responsive {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  #intro-box {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Contact links */
   .contact-links-responsive {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: nowrap;
-    margin-top: 8px;
+    margin-top: 10px;
     flex-direction: row !important;
     justify-content: flex-start;
   }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    line-height: 1.2;
+    color: inherit;
+    transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    background: rgba(15, 23, 42, 0.06);
+    color: #0f172a;
+  }
+
+  .contact-link img {
+    display: block;
+  }
+
+  /* Cleaner separators */
+  hr {
+    border: 0;
+    height: 1px;
+    background: rgba(15, 23, 42, 0.10);
+    margin: 22px 0 !important;
+  }
+
+  section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Typography tweaks for readability */
+  #intro-box ul.center,
+  #portfolio p {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #intro-box li {
+    line-height: 28px;
+  }
+
+  #portfolio h3 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+  }
+
+  #portfolio p {
+    color: rgba(15, 23, 42, 0.78);
+    margin-bottom: 0;
+  }
+
+  /* Project media: subtle rounded frame, shadow only on hover. */
+  .project-media {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    background: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .project-media:hover {
+    border-color: rgba(15, 23, 42, 0.16);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+  }
+
+  .project-media img:not([style*="position: absolute"]) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   @media (max-width: 900px) {
     .contact-links-responsive {
       justify-content: center !important;
       width: 100%;
     }
   }
+
   @media (max-width: 768px) and (min-width: 601px) {
     #intro-box {
       margin-top: 60px !important;
     }
   }
+
   @media (max-width: 600px) {
     #logo {
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
+
     .contact-links-responsive {
       flex-direction: row !important;
       flex-wrap: nowrap !important;
       gap: 6px;
-      margin-top: 10px;
+      margin-top: 12px;
       justify-content: center !important;
       width: 100%;
     }
+
     .contact-link {
       font-size: 0.98em;
       padding: 2px 6px;
     }
-    .download-resume-link {
-      width: auto;
-      text-align: left;
+
+    #portfolio h3 {
+      font-size: 22px;
     }
+
     #intro-box {
       margin-top: 80px !important;
     }
+
     header {
       padding-bottom: 20px !important;
     }
   }
+
   @media (min-width: 901px) {
     #logo {
       align-items: flex-start;
       text-align: left;
     }
+
     .contact-links-responsive {
       justify-content: flex-start !important;
     }
-    #intro-box .container, #intro-box .span12 {
+
+    #intro-box .container,
+    #intro-box .span12 {
       text-align: left !important;
       justify-content: flex-start !important;
       align-items: flex-start !important;
     }
+
     #intro-box ul.center {
       text-align: left !important;
       margin-left: 0 !important;
       margin-right: auto !important;
       display: block !important;
     }
-  }
-  /* Remove excessive gaps and padding between sections */
-  #intro-box {
-    margin-bottom: 40px !important;
-    padding-bottom: 0 !important;
-  }
-  #intro-box .container {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  #intro-box .span12 {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  #intro-box ul.center {
-    margin-bottom: 0 !important;
-  }
-  hr {
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-  }
-  section {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
   }
 </style>
 <!-- End Header -->
@@ -242,14 +307,14 @@
         </div>
     </div>
 </section>
-<hr style="margin-top: 8px; margin-bottom: 8px;">
+<hr>
 <!-- End Intro Box -->
 
 <!-- Start Section Portfolio Projects -->
 <section id="portfolio" class="container">
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <img src="assets/img/ror2.jpg" alt="" style="width:100%;">
             </div>
         </div>
@@ -261,7 +326,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <img src="assets/img/internal.jpg" alt="" style="width:100%;">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
                 <div style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 6px 10px; border-radius: 5px; font-size: 12px; font-weight: bold;">TBA</div>
@@ -275,7 +340,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://apps.apple.com/to/app/samedi-manor-idle-simulator/id1574151476" target="_blank" title="Samedi Manor on App Store"><img src="assets/img/samedi.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -288,7 +353,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://apps.apple.com/us/app/dragon-champions/id1440981294" target="_blank" title="Dragon Champions on App Store"><img src="assets/img/dragon.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -301,7 +366,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://apps.apple.com/us/app/love-flowers/id1535189303" target="_blank" title="Love and Flowers on App Store"><img src="assets/img/laf.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -314,7 +379,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://apps.apple.com/mu/app/idle-rabbits/id1510513766?l=us" target="_blank" title="Idle Rabbits on App Store"><img src="assets/img/rabbits.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -327,7 +392,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://apps.apple.com/fr/app/idle-farmer-my-village-story/id1496163515" target="_blank" title="My Idle Farm on App Store"><img src="assets/img/farm.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -340,7 +405,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <img src="assets/img/CA.jpg" alt="" style="width:100%;">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -353,7 +418,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <a href="https://play.google.com/store/apps/details?gl=US&hl=en&id=com.azurgames.BattleGroundRoyale" target="_blank" title="Pixel Unknown's Battleground on Google Play"><img src="assets/img/pixel.jpg" alt="" style="width:100%;"></a>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
@@ -366,7 +431,7 @@
     <hr>
     <div class="row align-items-center mb-5">
         <div class="span6">
-            <div style="position: relative;">
+            <div class="project-media">
                 <img src="assets/img/mi8.jpg" alt="" style="width:100%;">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" style="position: absolute; top: 10px; left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,0.9); padding: 5px; border-radius: 5px;">
             </div>
