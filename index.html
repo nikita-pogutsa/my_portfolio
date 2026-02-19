@@ -106,6 +106,7 @@
     --ink: #0f172a;
     --muted: rgba(15, 23, 42, 0.78);
     --line: rgba(15, 23, 42, 0.10);
+    --paper: #f7f7f7;
     --accent: #0ea5e9;
     --accent2: #f97316;
   }
@@ -170,13 +171,13 @@
   }
 
   #intro-box ul.center {
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    background:
+      linear-gradient(var(--paper), var(--paper)) padding-box,
+      linear-gradient(90deg, rgba(14, 165, 233, 0.62), rgba(249, 115, 22, 0.52)) border-box;
+    border: 2px solid transparent;
     border-radius: 16px;
     padding: 18px 22px;
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
   }
 
   #intro-box li::marker {
@@ -392,7 +393,9 @@
     <div class="row align-items-center mb-5">
         <div class="span6">
             <div class="project-media">
-                <img src="assets/img/ror2.jpg" alt="" style="width:100%;">
+                <a href="https://store.steampowered.com/app/2781620/Risk_of_Rain_2_Alloyed_Collective/" target="_blank" title="Risk of Rain 2: Alloyed Collective on Steam">
+                    <img src="assets/img/ror2.jpg" alt="" style="width:100%;">
+                </a>
             </div>
         </div>
         <div class="span6">
