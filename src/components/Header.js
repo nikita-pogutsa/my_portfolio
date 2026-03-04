@@ -2,7 +2,7 @@
 <div className="contact-info">
   <span className="email">your.email@example.com</span>
   <a
-    href="/resume.pdf"
+    href="/assets/pdf/CV__NIKITA_POGUTSA_.pdf"
     download
     className="download-resume-btn"
     style={{ marginLeft: '1rem' }}
